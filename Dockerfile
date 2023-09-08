@@ -2,7 +2,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the built JAR from the build stage
-COPY /*-SNAPSHOT.jar app.jar
+COPY *-SNAPSHOT.jar app.jar
 
 # Expose the port that the Spring Boot app will run on
 EXPOSE 8080
